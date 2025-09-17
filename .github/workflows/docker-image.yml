@@ -14,4 +14,4 @@ jobs:
     - uses: docker/build-push-action@v5
     - name: Build da imagem Docker
       run: |
-        docker build . Dockerfile --tag my-image-name:$(date +%s)
+        docker build . --fileDockerfile --tag my-image-name:$(date +%s)
